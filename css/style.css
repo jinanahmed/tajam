@@ -1,0 +1,369 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+ol, ul{
+    list-style-type: none;
+}
+
+a,h1,h2,h3,h4,h5{
+    line-height: 0.8;
+}
+
+/* navbar */
+
+.navbar{
+    position: absolute;
+    width: 100%;
+    z-index: 999;
+}
+
+.nav-item{
+    margin-left: 15px;
+}
+.nav-item a{
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    font-size: 13px;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+.nav-item:hover a{
+    color: #00e0d0;
+}
+
+/* navbar */
+
+#banner{
+    background: url(../images/banner.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    padding-top: 230px;
+    padding-bottom: 150px;
+    position: relative;
+    z-index: 1;
+}
+#banner::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: linear-gradient(90deg, #09052f, #311d5e);
+    opacity: 0.6;
+    z-index: -1;
+}
+.bannertext{
+    color: #fff;
+    position: relative;
+}
+.bannertext h3{
+    font-family: 'Playfair Display', serif;
+    font-size: 32px;
+    font-weight: 900;
+    text-transform: capitalize;
+}
+.bannertext::before{
+    content: '';
+    position: absolute;
+    height: 1px;
+    width: 50px;
+    background: #00e0d0;
+    top: 60px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.bannertext p{
+    padding-top: 55px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: 400;   
+}
+
+.bannerbutton button{
+    width: 120px;
+    padding: 14px 0;
+    text-transform: uppercase;
+    border: 1px solid #00e0d0;
+    background: none;
+    color: #00e0d0;
+    font-size: 16px;
+    font-family: 'Hammersmith One', sans-serif;
+    margin-top: 50px;
+}
+
+#story{
+    padding: 70px 0;
+}
+
+.storytext h3{
+    font-family: 'Playfair Display', serif;
+    font-size: 22px;
+    color: #413d4b;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.storytext p{
+    font-family: 'Roboto', serif;
+    font-size: 14px;
+    color: #413d4b;
+    font-weight: 300;
+}
+.textbutton button{
+    width: 120px;
+    padding: 14px 0;
+    text-transform: uppercase;
+    border: 1px solid #00e0d0;
+    background: none;
+    color: #00e0d0;
+    font-size: 16px;
+    font-family: 'Hammersmith One', sans-serif;
+    margin-top: 34px;
+}
+#story .col-5{
+    position: relative;
+}
+.storyimg img{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#video{
+    padding: 200px 0;
+    background: url(../images/video.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    z-index: 1;
+}
+#video::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: linear-gradient(90deg, #09052f, #311d5e);
+    opacity: 0.6;
+    z-index: -1;
+}
+.videoplay{
+    color: #fff;
+}
+.videoplay i{
+    font-size: 80px;
+}
+.videoplay p{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+    font-size: 16px;
+    margin-top: 25px;
+    text-transform: uppercase;
+}
+
+#expertise{
+    padding: 50px 0;
+}
+
+.commontitle{
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+    position: relative;
+    padding-bottom: 50px;
+}
+.commontitle h3{
+    font-size: 22px;
+    color: #413d4b;
+    text-transform: uppercase;
+    font-weight: 800;
+}
+.commontitle p{
+    font-size: 14px;
+    color: #2f2d35;
+}
+.commontitle::before {
+    content: '';
+    position: absolute;
+    height: 2px;
+    width: 50px;
+    background: #c6c4c9;
+    top: 60px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.logosdiv {
+    margin-top: 30px;
+    padding: 0 25px;
+    text-align: center;
+}
+.logosdiv i{
+    font-size: 34px;
+    padding-bottom: 30px;
+    background: -webkit-linear-gradient(45deg, #00e0d0, #4aa3cc);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.logosdiv h4{
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    color: #413d4b;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+.logosdiv p{
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    color: #333333;
+    font-weight: 300;
+}
+
+#team{
+    padding: 70px 0;
+    background: url(../images/teambg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    z-index: 1;
+}
+#team::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: linear-gradient(90deg, #09052f, #311d5e);
+    opacity: 0.6;
+    z-index: -1;
+}
+#team .commontitle h3,#team .commontitle p{
+    color: #fff;
+}
+.teamimgplaceholder{
+    width: 100%;
+    height: 230px;
+    background: #fff;
+}
+.teamtext{
+    font-family: 'Roboto', sans-serif;
+    color: #fff;
+    text-align: center;
+    padding-top: 22px;
+    text-transform: uppercase;
+}
+.teamtext h3{
+    font-size: 14px;
+    font-weight: 900;
+}
+.teamtext p{
+    font-size: 13px;
+    font-weight: 300;
+}
+.teamdiv{
+    position: relative;
+    border: 1px solid #d7d7d950;
+}
+
+.teambottomtext{
+    text-align: center;
+    padding-top: 70px;
+}
+.teambottomtext p{
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+}
+.teambutton button{
+    width: 140px;
+    padding: 10px 0;
+    text-transform: uppercase;
+    border: 1px solid #00e0d0;
+    background: none;
+    color: #00e0d0;
+    font-size: 16px;
+    font-family: 'Hammersmith One', sans-serif;
+    margin-top: 10px;
+}
+
+#works{
+    padding: 50px 0;
+}
+.workfilters{
+    margin: 0 auto;
+    text-align: center;
+}
+.workfilters button{
+    padding: 5px 5px;
+    text-transform: capitalize;
+    border: 1px solid #ddd;
+    background: none;
+    margin-left: 5px;
+}
+.worksimg{
+    width: 100%;
+}
+.workrow{
+    display: flex;
+    margin-top: 50px;
+}
+.workdiv1{
+    width: 16.66%;
+    background: #b6b6b6;
+    height: 200px;
+}
+.workdiv2{
+    width: 16.66%;
+    background: #acacac;
+    height: 200px;
+}
+.workdiv3{
+    width: 16.66%;
+    background: #a1a1a1;
+    height: 200px;
+}
+.workdiv4{
+    width: 16.66%;
+    background: #8a8a8a;
+    height: 200px;
+}
+.workdiv5{
+    width: 16.66%;
+    background: #b6b6b6;
+    height: 200px;
+}
+.workdiv6{
+    width: 16.66%;
+    background: #a4a4a4;
+    height: 200px;
+}
+.workrow-2{
+    display: flex;
+    flex-direction: row-reverse;
+}
+.workbutton{
+    text-align: center;
+    margin-top: 70px;
+}
+.workbutton button{
+    width: 140px;
+    padding: 10px 0;
+    text-transform: uppercase;
+    border: 1px solid #00e0d0;
+    background: none;
+    color: #00e0d0;
+    font-size: 16px;
+    font-family: 'Hammersmith One', sans-serif;
+}
